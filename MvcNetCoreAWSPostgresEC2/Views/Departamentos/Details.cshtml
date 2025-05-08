@@ -1,0 +1,16 @@
+﻿@model MvcNetCoreAWSPostgresEC2.Models.Departamento
+
+@{
+    ViewData["Title"] = "Detalles del Departamento";
+}
+
+<h1>Detalles del Departamento</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">ID: @Model.IdDepartamento</h5>
+        <p class="card-text"><strong>Nombre:</strong> @Model.Nombre</p>
+        <p class="card-text"><strong>Localidad:</strong> @Model.Localidad</p>
+        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    </div>
+</div>
